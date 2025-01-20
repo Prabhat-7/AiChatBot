@@ -1,0 +1,106 @@
+/* General Styles */
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #121212; /* Dark background */
+  color: #f1f1f1; /* Light text color */
+  transition: background-color 0.3s, color 0.3s;
+}
+header {
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 4px 4px #000000;
+  font-size: 32px;
+  font-weight: bold;
+  color: #4caf50; /* Green text color */
+  margin-bottom: 20px;
+}
+
+/* App Container */
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1e1e1e; /* Dark container background */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column; /* Ensure the content inside is stacked vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Message List */
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-height: 400px;
+  overflow-y: auto;
+  width: 100%; /* Allow the ul to take up the full width */
+}
+
+li {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 6px;
+  background-color: #333333; /* Dark message background */
+  border-left: 5px solid #4caf50; /* Green border */
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: left; /* Left align text inside li */
+}
+
+li:nth-child(even) {
+  background-color: #444444; /* Slightly lighter background for even messages */
+  border-left-color: #8bc34a; /* Light green border */
+}
+
+/* Input Container */
+div > div {
+  display: flex;
+  justify-content: center; /* Center input and button horizontally */
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Input Styles */
+.input-container {
+  position: absolute;
+  bottom: 10%;
+}
+input {
+  width: 400px; /* Fixed width for the input */
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555; /* Dark border */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 16px;
+  outline: none;
+  background-color: #333; /* Dark input background */
+  color: #f1f1f1; /* Light text color */
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.3);
+}
+
+/* Submit Button */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c; /* Darker green on hover */
+}
